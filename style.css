@@ -1,0 +1,59 @@
+body{
+    margin: 0px;
+}
+
+div{
+    padding: 0px 0px 10px;
+    display: flex;
+    align-items: center;
+}
+
+.um{
+    animation-name: mover;
+    animation-duration:2s;
+}
+
+.dois{
+    animation-name: cor;
+    animation-duration:2s;
+}
+
+img{
+    width: 30%;
+    /* transition: .5s; */
+    /* /animation: mover, cor; */
+    /* animation-duration: 2s; */
+    /* animation-fill-mode: inherit; */
+    /* animation-iteration-count: */
+}
+
+img:hover{
+   /* filter: grayscale(80%) ;*/
+    /*box-shadow: 10px 10px 30px black;*/
+    transform: scale(2);
+    filter: blur(30%);
+}
+
+@keyframes mover{
+    from{
+transform: translateX(0);
+filter: opacity(100%);
+    }
+
+    to{
+        transform: translateX(600px);
+        filter: opacity(0%);
+    }
+}
+
+@keyframes cor{
+    from{
+        transform: translate(0);
+        filter: opacity(100%);
+    }
+
+    to{
+        transform: translateX(-600px);
+        filter: opacity(0%);
+    }
+}
